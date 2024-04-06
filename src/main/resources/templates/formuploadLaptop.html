@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Enter Laptop Details</title>
+	</head>
+	<body>
+		<form name="uploadLaptop" action="@{/saveWeb}">
+			<b>Enter Name</b>
+			<input type="text" name="name">
+			
+			<br><br>
+			<b>Enter Cost</b>
+			<input type="number" name="cost">
+			
+			<br><br>
+			<b>Enter Image</b>
+			<input type="text" name="image">
+			
+			<br><br>
+			<b>Enter Discount</b>
+			<input type="number" name="discount">
+			
+			<input type="submit" value="Upload">
+		</form>
+	</body>
+</html>

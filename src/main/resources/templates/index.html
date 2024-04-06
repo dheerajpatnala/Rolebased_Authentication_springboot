@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Welcome to security</title>
+
+	</head>
+	<body>
+		<a href="/uploadLaptop">upload Laptop"</a>
+		<br>
+		<br>
+		<a href="/viewLaptops">view Laptop "</a>
+		<br>
+		<br>
+		<form name="logoutForm" action="@{/logout}" method="post">
+			<input type="submit" value="Logout">
+		</form>
+	</body>
+</html>

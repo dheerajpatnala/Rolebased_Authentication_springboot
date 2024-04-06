@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Enter Laptop Details</title>
+	</head>
+	<body>
+		<table border="1"
+			   align="center"
+			   cellspacing="10"
+			   cellpadding="10">
+			<tr>
+				<th>id</th>
+				<th>name</th>
+				<th>cost</th>
+				<th>image</th>
+				<th>discount</th>
+			</tr>
+			
+			<tr th:each="laptop:${laptops}">
+				<td th:text="${laptop.id}"></td>
+				<td th:text="${laptop.name}"></td>
+				<td th:text="${laptop.cost}"></td>
+				<td>
+					<img th:src="${laptop.image}" width="50px">
+				</td>
+				<td th:text="${laptop.discount}"></td>
+			</tr>
+		</table>
+	</body>
+</html>
